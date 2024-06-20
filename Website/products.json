@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Dog Food",
+        "price": 200,
+        "image": "products/1.png"
+    },
+    {
+        "id": 2,
+        "name":" Cat Shampoo",
+        "price": 250,
+        "image": "products/2.png"
+    },
+    {
+        "id": 3,
+        "name":" Wet Foods",
+        "price": 290,
+        "image": "products/3.png"
+    },
+    {
+        "id": 4,
+        "name":" Cat Food",
+        "price": 200,
+        "image": "products/4.png"
+    },
+    {
+        "id": 5,
+        "name":" Dog Shampoo",
+        "price": 300,
+        "image": "products/5.png"
+    },
+    {
+        "id": 6,
+        "name":" Bird Feeds",
+        "price": 200,
+        "image": "products/6.png"
+    },
+    {
+        "id": 7,
+        "name":" Bird Branch",
+        "price": 200,
+        "image": "products/7.png"
+    },
+    {
+        "id": 8,
+        "name":" Bird Vitamins",
+        "price": 200,
+        "image": "products/8.png"
+    }
+
+]

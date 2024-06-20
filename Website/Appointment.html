@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment</title>
+    <link rel="stylesheet" href="Appointment.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="Images/logo.png" alt="Logo">
+            <p>PetPals</p>
+        </a>
+    </header>
+    <div class="container">
+        <h1>Schedule Appointment</h1>
+        <form id="task-form">
+            <select id="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="Pet Grooming">Pet Grooming</option>
+                <option value="Vaccination">Vaccination</option>
+                <option value="Behavioral Consultation">Behavioral Consultation</option>
+                <option value="Pet Training">Pet Training</option>
+                <option value="Pet Care">Pet Care</option>
+                <option value="Pet Adoption">Pet Adoption</option>
+                <option value="Pet Checkup">Pet Checkup</option>
+            </select>
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+        </form>
+        <button id="next-button" disabled>Next</button>
+        
+        <!-- New Form for User Details -->
+        <form id="user-details-form" style="display: none;">
+            <h2>User Details</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <select id="sex" required>
+                <option value="" disabled selected>Sex</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input type="tel" id="contact" placeholder="Contact Number" pattern="\d{11}" maxlength="11" required>
+            <input type="text" id="animal-type" placeholder="Animal Type" required>
+            <button type="submit" id="done-button" disabled>Done</button>
+        </form>
+
+        <!-- Div to display final data -->
+        <div id="final-data" style="display: none;">
+            <h2>Appointment Details</h2>
+            <p id="display-name"></p>
+            <p id="display-sex"></p>
+            <p id="display-contact"></p>
+            <p id="display-animal-type"></p>
+            <p id="display-service"></p>
+            <p id="display-date"></p>
+            <p id="display-time"></p>
+            <button id="confirm-button">Confirm</button>
+        </div>
+    </div>
+    <script src="Appointment.js"></script>
+</body>
+</html>

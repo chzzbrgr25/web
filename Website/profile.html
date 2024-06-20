@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <div class="profile-container">
+        <div class="profile">
+            <h2>Profile Information</h2>
+            <div id="profile-info">
+                <p><strong>Name:</strong> <span id="profile-name">Juan Dela Cruz</span></p>
+                <p><strong>Email:</strong> <span id="profile-email">juandelacruz@gmail.com</span></p>
+                <p><strong>Password:</strong> <span id="profile-password">*********</span></p>
+                <button id="edit-profile-btn">Edit Profile</button>
+            </div>
+        </div>
+
+        <div id="edit-profile-form" class="edit-profile-form">
+            <h2>Edit Profile</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">New Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="button-container">
+                    <button type="submit">Save Changes</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="appointment" class="appointment-details">
+            <h2>Appointment Details</h2>
+            <p><strong>Date:</strong> June 25, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM</p>
+            <p><strong>Service:</strong> Pet Grooming</p>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

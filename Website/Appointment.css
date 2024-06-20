@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form select, form input[type="date"], form input[type="time"], form input[type="text"], form input[type="tel"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4cae4c;
+}
+
+#schedule {
+    text-align: left;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#task-list li button:hover {
+    background: #c9302c;
+}
+
+#next-button, #user-details-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#next-button:hover, #user-details-form button:hover {
+    background: #0056b3;
+}
+
+#user-details-form {
+    display: none;
+}
+
+#user-details-form input, #user-details-form select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#confirm-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#confirm-button:hover {
+    background: #4cae4c;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 100px;
+    padding-right: 250px;
+    background-color: #183040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo img {
+    height: 100px; /* Adjust the height to fit your design */
+    margin-right: 10px;
+}
+
+.header .logo p {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3s ease;
+    color: #FF8B67;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: calc(100vh - 150px); /* Adjust the height considering the header height */
+}
+
+#user-details-form input[type="text"],
+#user-details-form input[type="tel"],
+#user-details-form select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#user-details-form input[type="text"],
+#user-details-form input[type="tel"],
+#user-details-form select {
+    width: calc(100% - 20px); /* Subtract padding from the width */
+}
+
+#user-details-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
